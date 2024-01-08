@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Task1:Video controls </h2>
+    
+        <div style="text-align:center">
+            <video  id="vid" src="video.mp4" width="420" autoplay>
+            </video>
+            <br>
+            
+                <input id="progress" type="range" style="width: 325px;" value="0" min="0" step="1" max="100"/>
+                <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span>
+            
+            <br><br>
+
+            <button onclick="playVid()">Play</button>
+            <button onclick="stopVid()">Stop</button>
+            <button onclick="jumpBackward()"><<</button>
+            <button onclick="jumpToStart()"><</button>
+            <button onclick="jumpToEnd()">></button>
+            <button onclick="jumpForward()">>></button>
+            <input id="volume" type="range"  min="0" max="1" step="0.1" value="1"/>
+            <button onclick="muteVideo()">Mute</button>
+            <button id="fullScreen">fullScreen</button>
+           
+        </div> 
+    
+   
+   
+    <script src="js.js"></script>
+</body>
+</html>
